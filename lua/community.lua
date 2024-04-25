@@ -15,4 +15,5 @@ return {
   { import = "astrocommunity.git.neogit" },
   { import = "astrocommunity.file-explorer.oil-nvim" },
   { import = "astrocommunity.motion.flash-nvim" },
+  { import = "astrocommunity.motion.mini-surround" },
 }
