@@ -14,4 +14,5 @@ return {
   { import = "astrocommunity.utility.noice-nvim" },
   { import = "astrocommunity.git.neogit" },
   { import = "astrocommunity.file-explorer.oil-nvim" },
+  { import = "astrocommunity.motion.flash-nvim" },
 }
