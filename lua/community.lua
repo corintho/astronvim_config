@@ -10,4 +10,6 @@ return {
   { import = "astrocommunity.pack.typescript" },
   -- Coding
   { import = "astrocommunity.completion.copilot-lua" },
+  -- Other
+  { import = "astrocommunity.utility.noice-nvim" },
 }
