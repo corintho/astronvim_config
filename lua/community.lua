@@ -8,4 +8,6 @@ return {
   -- Language packs
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.typescript" },
+  -- Coding
+  { import = "astrocommunity.completion.copilot-lua" },
 }
