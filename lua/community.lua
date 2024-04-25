@@ -16,6 +16,7 @@ return {
   { import = "astrocommunity.file-explorer.oil-nvim" },
   { import = "astrocommunity.motion.flash-nvim" },
   { import = "astrocommunity.motion.mini-surround" },
+  { import = "astrocommunity.motion.grapple-nvim" },
   { import = "astrocommunity.project.nvim-spectre" },
   { import = "astrocommunity.editing-support.undotree" },
 }
