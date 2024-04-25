@@ -17,4 +17,5 @@ return {
   { import = "astrocommunity.motion.flash-nvim" },
   { import = "astrocommunity.motion.mini-surround" },
   { import = "astrocommunity.project.nvim-spectre" },
+  { import = "astrocommunity.editing-support.undotree" },
 }
