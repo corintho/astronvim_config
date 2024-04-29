@@ -11,11 +11,10 @@ return {
     config = function()
       local hlchunk = require "hlchunk"
       local style_color = vim.fn.synIDattr(vim.fn.synIDtrans(vim.fn.hlID "CursorLineNr"), "fg", "gui")
-      -- Add oir filetype to default excludes list
-      table.insert(require("hlchunk.utils.filetype").exclude_filetypes, { oil = true })
       hlchunk.setup {
         chunk = {
           enable = true,
+          notify = false,
           use_treesitter = true,
           chars = {
             horizontal_line = "─",
@@ -32,6 +31,7 @@ return {
 
         indent = {
           enable = false,
+          notify = false,
           use_treesitter = false,
           chars = {
             "│",
@@ -41,12 +41,14 @@ return {
 
         line_num = {
           enable = true,
+          notify = false,
           use_treesitter = true,
           style = style_color,
         },
 
         blank = {
           enable = false,
+          notify = false,
           use_treesitter = true,
           chars = {
             " ",
@@ -59,6 +61,7 @@ return {
         },
         context = {
           enable = false,
+          notify = false,
           use_treesitter = true,
           chars = {
             "",
