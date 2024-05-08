@@ -10,6 +10,7 @@ return {
   { import = "astrocommunity.pack.typescript" },
   -- Coding
   { import = "astrocommunity.bars-and-lines.dropbar-nvim" },
+  { import = "astrocommunity.code-runner.overseer-nvim" },
   { import = "astrocommunity.completion.copilot-lua" },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
   { import = "astrocommunity.editing-support.nvim-treesitter-context" },
