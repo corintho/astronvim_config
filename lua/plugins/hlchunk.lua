@@ -10,7 +10,12 @@ return {
     },
     config = function()
       local hlchunk = require "hlchunk"
-      local style_color = vim.fn.synIDattr(vim.fn.synIDtrans(vim.fn.hlID "CursorLineNr"), "fg", "gui")
+      local hl = function()
+        return {
+          { fg = function() return vim.fn.synIDattr(vim.fn.synIDtrans(vim.fn.hlID "CursorLineNr"), "fg", "gui") end },
+          { bg = function() return vim.fn.synIDattr(vim.fn.synIDtrans(vim.fn.hlID "CursorLineNr"), "bg", "gui") end },
+        }
+      end
       hlchunk.setup {
         chunk = {
           enable = true,
@@ -23,7 +28,7 @@ return {
             left_bottom = "╰",
             right_arrow = "",
           },
-          style = style_color,
+          style = hl(),
           textobject = "",
           max_file_size = 1024 * 1024,
           error_sign = true,
@@ -36,14 +41,14 @@ return {
           chars = {
             "│",
           },
-          style = style_color,
+          style = hl(),
         },
 
         line_num = {
           enable = true,
           notify = false,
           use_treesitter = true,
-          style = style_color,
+          style = hl(),
         },
 
         blank = {
@@ -54,7 +59,7 @@ return {
             " ",
           },
           style = {
-            { bg = vim.fn.synIDattr(vim.fn.synIDtrans(vim.fn.hlID "cursorline"), "bg", "gui") },
+            { bg = function() return vim.fn.synIDattr(vim.fn.synIDtrans(vim.fn.hlID "cursorline"), "bg", "gui") end },
             { bg = "", fg = "" },
           },
           -- exclude_filetype = "...",
