@@ -2,7 +2,6 @@
 return {
   {
     "NeogitOrg/neogit",
-    branch = "nightly",
     opts = {
       ignored_settings = {
         "NeogitPushPopup--force-with-lease",
