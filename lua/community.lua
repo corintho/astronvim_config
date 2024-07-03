@@ -27,6 +27,7 @@ return {
   -- Colorschemes
   { import = "astrocommunity.colorscheme.monokai-pro-nvim" },
   -- Other
+  { import = "astrocommunity.recipes.neovide" },
   { import = "astrocommunity.editing-support.undotree" },
   { import = "astrocommunity.file-explorer.oil-nvim" },
   { import = "astrocommunity.markdown-and-latex.glow-nvim" },
