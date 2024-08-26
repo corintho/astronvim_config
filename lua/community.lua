@@ -15,7 +15,7 @@ return {
   { import = "astrocommunity.diagnostics.trouble-nvim" },
   { import = "astrocommunity.editing-support.nvim-treesitter-context" },
   { import = "astrocommunity.lsp.inc-rename-nvim" },
-  { import = "astrocommunity.project.nvim-spectre" },
+  { import = "astrocommunity.search.nvim-spectre" },
   -- Motion
   { import = "astrocommunity.motion.flash-nvim" },
   { import = "astrocommunity.motion.grapple-nvim" },
