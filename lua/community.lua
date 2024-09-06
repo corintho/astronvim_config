@@ -7,6 +7,7 @@ return {
   "AstroNvim/astrocommunity",
   -- Language packs
   { import = "astrocommunity.pack.lua" },
+  { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.typescript" },
   -- Coding
   { import = "astrocommunity.bars-and-lines.dropbar-nvim" },
