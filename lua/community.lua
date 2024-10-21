@@ -26,6 +26,7 @@ return {
   { import = "astrocommunity.git.blame-nvim" },
   { import = "astrocommunity.git.git-blame-nvim" },
   { import = "astrocommunity.git.neogit" },
+  { import = "astrocommunity.git.diffview-nvim" },
   -- Colorschemes
   { import = "astrocommunity.colorscheme.monokai-pro-nvim" },
   -- Other
