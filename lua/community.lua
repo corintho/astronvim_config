@@ -37,4 +37,5 @@ return {
   { import = "astrocommunity.media.codesnap-nvim" },
   { import = "astrocommunity.utility.noice-nvim" },
   { import = "astrocommunity.workflow.hardtime-nvim" },
+  { import = "astrocommunity.programming-language-support.rest-nvim" },
 }
