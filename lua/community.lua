@@ -20,7 +20,7 @@ return {
   { import = "astrocommunity.search.nvim-spectre" },
   -- Motion
   { import = "astrocommunity.motion.flash-nvim" },
-  { import = "astrocommunity.motion.grapple-nvim" },
+  { import = "astrocommunity.motion.harpoon" },
   { import = "astrocommunity.motion.mini-surround" },
   -- Git
   { import = "astrocommunity.git.blame-nvim" },
