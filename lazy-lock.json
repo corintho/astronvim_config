@@ -27,6 +27,7 @@
   "dropbar.nvim": { "branch": "master", "commit": "9d8cad9548804a33c9a1968fe305e46e95c911ae" },
   "eldritch.nvim": { "branch": "master", "commit": "48788ef2f7be7e86b0a57ef87f1a96bc18e24b8b" },
   "flash.nvim": { "branch": "main", "commit": "34c7be146a91fec3555c33fe89c7d643f6ef5cf1" },
+  "flexoki": { "branch": "main", "commit": "8fbe7d39c1f84e06df113790d5007beab5de3d8e" },
   "flutter-tools.nvim": { "branch": "main", "commit": "7e6d8611d8606efca64cb8cf1ca07550b7087d1c" },
   "friendly-snippets": { "branch": "main", "commit": "de8fce94985873666bd9712ea3e49ee17aadb1ed" },
   "git-blame.nvim": { "branch": "master", "commit": "2883a7460f611c2705b23f12d58d398d5ce6ec00" },

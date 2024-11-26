@@ -12,13 +12,6 @@ return {
     },
     dependencies = {
       {
-        "AstroNvim/astroui",
-        ---@type AstroUIOpts
-        opts = {
-          colorscheme = "eldritch",
-        },
-      },
-      {
         "rcarriga/nvim-notify",
         optional = true,
         opts = {
