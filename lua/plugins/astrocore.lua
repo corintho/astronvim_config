@@ -43,7 +43,7 @@ return {
       -- first key is the mode
       n = {
         -- second key is the lefthand side of the map
-
+        [","] = { ":", desc = "Command" },
         -- edit last buffer
         ["<Leader>`"] = { "<cmd>e#<cr>", desc = " Last Buffer" },
         -- mappings seen under group name "Buffer"
