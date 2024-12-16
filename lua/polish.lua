@@ -4,9 +4,9 @@
 
 -- Set up custom filetypes
 vim.filetype.add {
-  -- extension = {
-  --   foo = "fooscript",
-  -- },
+  extension = {
+    ["code-snippets"] = "jsonc",
+  },
   filename = {
     ["Podfile"] = "ruby",
   },
