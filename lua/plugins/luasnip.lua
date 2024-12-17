@@ -1,3 +1,6 @@
+--TODO: only do this if the plugin is enabled
+
+---@type LazySpec
 return {
   {
     "L3MON4D3/LuaSnip",
