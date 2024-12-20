@@ -27,6 +27,7 @@
   "dressing.nvim": { "branch": "master", "commit": "43b8f74e0b1e3f41e51f640f8efa3bcd401cea0d" },
   "dropbar.nvim": { "branch": "master", "commit": "321cbc7a6be672f15e3ec5ceaab7a90b4dec6122" },
   "eldritch.nvim": { "branch": "master", "commit": "48788ef2f7be7e86b0a57ef87f1a96bc18e24b8b" },
+  "eyeliner.nvim": { "branch": "main", "commit": "8f197eb30cecdf4c2cc9988a5eecc6bc34c0c7d6" },
   "flash.nvim": { "branch": "main", "commit": "34c7be146a91fec3555c33fe89c7d643f6ef5cf1" },
   "flexoki": { "branch": "main", "commit": "5b826df81b3701e50fdd820e450d0a03a3898a1a" },
   "flutter-tools.nvim": { "branch": "main", "commit": "818ad42b204cda5317baa399377ea30b35f6f8be" },
