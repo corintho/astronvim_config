@@ -12,8 +12,10 @@ return {
       "AstroNvim/astrocore",
       ---@type AstroCoreOpts
       opts = {
-        g = {
-          codeium_enabled = false,
+        options = {
+          g = {
+            codeium_enabled = true,
+          },
         },
         mappings = {
           n = {
