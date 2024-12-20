@@ -29,6 +29,7 @@ return {
   { import = "astrocommunity.git.neogit" },
   { import = "astrocommunity.git.diffview-nvim" },
   -- Colorschemes
+  { import = "astrocommunity.colorscheme.kanagawa-nvim" },
   { import = "astrocommunity.colorscheme.monokai-pro-nvim" },
   -- Other
   { import = "astrocommunity.recipes.neovide" },
