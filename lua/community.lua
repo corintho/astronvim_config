@@ -36,6 +36,7 @@ return {
   { import = "astrocommunity.editing-support.undotree" },
   { import = "astrocommunity.file-explorer.oil-nvim" },
   { import = "astrocommunity.markdown-and-latex.glow-nvim" },
+  { import = "astrocommunity.markdown-and-latex.markview-nvim" },
   { import = "astrocommunity.media.codesnap-nvim" },
   { import = "astrocommunity.utility.noice-nvim" },
   { import = "astrocommunity.workflow.hardtime-nvim" },

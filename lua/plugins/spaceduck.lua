@@ -2,6 +2,7 @@
 return {
   {
     "pineapplegiant/spaceduck",
+    branch = "dev",
     dependencies = {
       {
         "AstroNvim/astroui",
