@@ -10,7 +10,6 @@ return {
         opts = {
           highlights = {
             spaceduck = { -- a table of overrides/changes when applying the astrotheme theme
-              StatusLine = { link = "StatusLineNC" },
               FlashLabel = { link = "EyelinerPrimary" },
             },
           },
