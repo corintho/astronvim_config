@@ -15,6 +15,9 @@ vim.filetype.add {
   -- },
 }
 
+-- Enable per project vim options
+vim.o.exrc = true
+
 -- Setup for neovide
 if vim.g.neovide == true then
   -- Proper setup for OSX
