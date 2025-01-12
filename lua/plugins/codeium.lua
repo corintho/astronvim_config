@@ -3,8 +3,9 @@ return {
   {
     "Exafunction/codeium.nvim",
     enabled = function()
-      local jit = require "jit"
-      return jit.os ~= "OSX"
+      return false
+      -- local jit = require "jit"
+      -- return jit.os ~= "OSX"
     end,
     cmd = "Codeium",
     event = "LspAttach",
