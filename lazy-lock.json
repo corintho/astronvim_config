@@ -93,7 +93,9 @@
   "toggleterm.nvim": { "branch": "main", "commit": "50ea089fc548917cc3cc16b46a8211833b9e3c7c" },
   "trouble.nvim": { "branch": "main", "commit": "50481f414bd3c1a40122c1d759d7e424d5fafe84" },
   "tsc.nvim": { "branch": "main", "commit": "59abb6f3f24a3ca80708f694af4e2b727a1a3211" },
+  "typr": { "branch": "main", "commit": "c2f12aa8ba94eb9b6f4ab3e1d155687eaff99473" },
   "undotree": { "branch": "master", "commit": "2556c6800b210b2096b55b66e74b4cc1d9ebbe4f" },
   "vim-illuminate": { "branch": "master", "commit": "5eeb7951fc630682c322e88a9bbdae5c224ff0aa" },
+  "volt": { "branch": "main", "commit": "1a7d6b1dfb2f176715ccc9e838be32d044f8a734" },
   "which-key.nvim": { "branch": "main", "commit": "8ab96b38a2530eacba5be717f52e04601eb59326" }
 }
