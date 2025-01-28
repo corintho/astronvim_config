@@ -30,3 +30,5 @@ if vim.g.neovide == true then
     vim.api.nvim_set_keymap("v", "<D-v>", "<C-R>+", { noremap = true, silent = true })
   end
 end
+
+pcall(require, "patches")
