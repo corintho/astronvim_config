@@ -19,7 +19,7 @@ return {
         -- disable cursor animation
         neovide_cursor_animation_length = 0,
         -- fix pasting for OSX
-        neovide_input_macos_option_key_is_meta = true,
+        neovide_input_macos_option_key_is_meta = "both",
         neovide_input_use_logo = 1,
       },
     },
