@@ -8,6 +8,7 @@ return {
   -- Language packs
   { import = "astrocommunity.pack.dart" },
   { import = "astrocommunity.pack.lua" },
+  { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.svelte" },
   { import = "astrocommunity.pack.typescript" },
