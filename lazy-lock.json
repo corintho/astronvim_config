@@ -86,6 +86,7 @@
   "rest.nvim": { "branch": "main", "commit": "59b93c8be074a7fadb09fef2ab0700c86d37d2bd" },
   "rustaceanvim": { "branch": "master", "commit": "f03035fa03ccb36cd26d0792c946fbacba1d1a39" },
   "scratch.nvim": { "branch": "main", "commit": "6230634669d29bf05ab4e85b3c7df8fd8402dcb4" },
+  "showkeys": { "branch": "main", "commit": "8daf5abb5fece0c9e1fa2c5679aaf226a80f5c38" },
   "smart-splits.nvim": { "branch": "master", "commit": "4a231987665d3c6e02ca88833d050e918afe3e1e" },
   "spaceduck": { "branch": "dev", "commit": "e217c9740184f1e8d50f8a3c38e363dc79dac2a7" },
   "telescope-fzf-native.nvim": { "branch": "main", "commit": "2a5ceff981501cff8f46871d5402cd3378a8ab6a" },
