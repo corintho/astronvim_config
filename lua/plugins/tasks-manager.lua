@@ -10,37 +10,25 @@ return {
       n = {
         ["<Leader>Tc"] = {
           function()
-            require("telescope.builtin").grep_string(require("telescope.themes").get_ivy {
-              prompt_title = "Completed Tasks",
+            require("snacks").picker.grep_word {
+              regex = true,
               search = "^- \\[x\\] `done:", -- Matches lines starting with "- [x] `done:"
-              search_dirs = { vim.fn.getcwd() }, -- Restrict search to the current working directory
-              use_regex = true, -- Enable regex for the search term
-              initial_mode = "normal", -- Start in normal mode
-              layout_config = {
-                preview_width = 0.5, -- Adjust preview width
-              },
-              additional_args = function()
-                return { "--no-ignore" } -- Include files ignored by .gitignore
-              end,
-            })
+              focus = "list",
+              live = false,
+              title = "Completed Tasks",
+            }
           end,
           desc = "Search completed tasks",
         },
         ["<Leader>Tt"] = {
           function()
-            require("telescope.builtin").grep_string(require("telescope.themes").get_ivy {
-              prompt_title = "Incomplete Tasks",
-              search = "^- \\[ \\]", -- Ensure "- [ ]" is at the beginning of the line
-              search_dirs = { vim.fn.getcwd() }, -- Restrict search to the current working directory
-              use_regex = true, -- Enable regex for the search term
-              initial_mode = "normal", -- Start in normal mode
-              layout_config = {
-                preview_width = 0.5, -- Adjust preview width
-              },
-              additional_args = function()
-                return { "--no-ignore" } -- Include files ignored by .gitignore
-              end,
-            })
+            require("snacks").picker.grep_word {
+              regex = true,
+              search = "^- \\[ \\] ", -- Ensure "- [ ]" is at the beginning of the line
+              focus = "list",
+              live = false,
+              title = "Incomplete Tasks",
+            }
           end,
           desc = "Search incomplete tasks",
         },
