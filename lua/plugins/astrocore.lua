@@ -13,16 +13,46 @@ return {
       large_buf = { size = 1024 * 256, lines = 10000 }, -- set global limits for large files for disabling features like treesitter
       autopairs = true, -- enable autopairs at start
       cmp = true, -- enable completion at start
-      diagnostics_mode = 3, -- diagnostic mode on start (0 = off, 1 = no signs/virtual text, 2 = no virtual text, 3 = on)
+      diagnostics = { virtual_text = true, virtual_lines = false }, -- enable or disable diagnostics features on start
       highlighturl = true, -- highlight URLs at start
+      large_buf = {
+        -- whether to enable large file detection for a buffer (must return false to disable)
+        -- first parameter is the buffer number, the second is the large buffer configuration table
+        -- return values:
+        --   - `true` or `nil` to continue and respects all changes made to the large buffer configuration table
+        --   - `false` to disable large file detection for the buffer
+        --   - a new table of large buffer options to use instead of the defaults
+        enabled = function(bufnr, config) end,
+        notify = true, -- whether or not to display a notification when a large file is detected
+        size = 1024 * 100, -- max file size (or false to disable check)
+        lines = 10000, -- max number of lines (or false to disable check)
+        line_length = 1000, -- average line length (or false to disable check)
+      },
       notifications = true, -- enable notifications at start
     },
-    -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
-    diagnostics = {
-      virtual_text = true,
-      underline = true,
-    },
-    -- vim options can be configured here
+    -- Configure project root detection, check status with `:AstroRootInfo`
+    rooter = {
+      -- list of detectors in order of prevalence, elements can be:
+      --   "lsp" : lsp detection
+      --   string[] : a list of directory patterns to look for
+      --   fun(bufnr: integer): string|string[] : a function that takes a buffer number and outputs detected roots
+      detector = {
+        "lsp", -- highest priority is getting workspace from running language servers
+        { ".git", "_darcs", ".hg", ".bzr", ".svn" }, -- next check for a version controlled parent directory
+        { "lua", "MakeFile", "package.json" }, -- lastly check for known project root files
+      },
+      -- ignore things from root detection
+      ignore = {
+        servers = {}, -- list of language server names to ignore (Ex. { "efm" })
+        dirs = {}, -- list of directory patterns (Ex. { "~/.cargo/*" })
+      },
+      -- automatically update working directory (update manually with `:AstroRoot`)
+      autochdir = false,
+      -- scope of working directory to change ("global"|"tab"|"win")
+      scope = "global",
+      -- show notification on every working directory change
+      notify = false,
+    }, -- vim options can be configured here
     options = {
       opt = { -- vim.opt.<key>
         relativenumber = true, -- sets vim.opt.relativenumber
@@ -54,6 +84,14 @@ return {
             )
           end,
           desc = "Pick to close",
+        },
+        ["<Leader>c"] = {
+          function()
+            local bufs = vim.fn.getbufinfo { buflisted = true }
+            require("astrocore.buffer").close(0)
+            if not bufs[2] then require("snacks").dashboard() end
+          end,
+          desc = "Close buffer",
         },
         -- tables with just a `desc` key will be registered with which-key if it's installed
         -- this is useful for naming menus

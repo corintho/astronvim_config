@@ -14,7 +14,7 @@ return {
       opts = {
         mappings = {
           n = {
-            ["<leader>uB"] = {
+            ["<Leader>uB"] = {
               function() require("nvim-biscuits").toggle_biscuits() end,
               desc = "󰆘 Toggle context",
             },

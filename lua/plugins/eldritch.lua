@@ -10,14 +10,6 @@ return {
         keywords = {},
       },
     },
-    dependencies = {
-      {
-        "rcarriga/nvim-notify",
-        optional = true,
-        opts = {
-          background_colour = "#000000",
-        },
-      },
-    },
+    dependencies = {},
   },
 }
