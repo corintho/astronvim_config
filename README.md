@@ -1,3 +1,9 @@
+:warning: This repository is no longer maintained. :warning:
+
+:white_check_mark: I am moving my configuration to Nix on all of my platforms, and as such, this is now part of a broader repository here: [Dofiles](https://github.com/corintho/dotfiles).
+
+All of its configurations are currently in a folder called `files/nvim` (2025-06-19). However, this is not guaranteed to be the case moving forward.
+
 # AstroNvim personal setup
 
 This is a direct fork from the official [AstroNvim](https://github.com/AstroNvim/template) template, with the customizations relevant to my personal workflow
